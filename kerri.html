@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css" integrity="sha512-3YMBYASBKTrccbNMWlnn0ZoEOfRjVs9qo/dlNRea196pg78HaO0H/xPPO2n6MIqV6CgTYcWJ1ZB2EgWjeNP6XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kerri</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .Section1{
+            height: 100vh;
+            width: 100%;
+            animation-name: fade;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+            background-attachment: fixed;
+        }
+        @keyframes fade{
+            0%{
+                background-image: url(./images/images1.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            50%{
+                background-image: url(./images/images16.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            100%{
+                background-image: url(./images/images17.jpg);
+                background-position: center;
+                background-size: cover;   
+            }
+        }
+        .img1{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid; */
+            animation-name: fade;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: absolute;
+            background-attachment: fixed;
+        }
+        .img2{
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid; */
+            animation-name: fade;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: absolute;
+            background-attachment: fixed;
+        }
+        .blackdiv{
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.619);
+            /* border: 2px solid red; */
+        }
+        .navbar{
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid red; */
+            /* position: fixed; */
+            padding: 10px;
+            animation-name: fadechng;
+            animation-duration: initial;
+            /* animation-iteration-count: inherit; */
+            animation-direction: alternate;
+            /* z-index: 1; */
+        }
+        @keyframes fadechng{
+            0%{
+                top: 0px;
+                opacity: 1;
+            }
+            50%{
+                top: 400px;
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .logo{
+            height: 32px;
+            width: 80px;
+            /* border: 1px solid rebeccapurple; */
+            background-color: transparent;
+            background-image: url(./images/images01.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            /* z-index: 2; */
+            margin-left: 200px;
+            margin-top: 10px
+        }
+        .Navul{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 480px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .navlist{
+            display: inline;
+            /* vertical-align: middle; */
+            margin: 16px;
+            list-style: none;
+        }
+        .navlist a{
+            color: white;
+            text-decoration: none;
+        }
+        .navlist a:hover{
+            color: palevioletred;
+        }
+        .navlist1 a{
+            color: palevioletred;
+            text-decoration: none;
+        }
+        .navlist1{
+            display: inline;
+            /* vertical-align: middle; */
+            margin: 16px;
+            list-style: none;
+        }
+        .textdiv{
+            height: 400px;
+            width: 100%;
+            /* border: 5px solid red; */
+            position: relative;
+            padding: 10px;
+            z-index: 2;
+        }
+        .welcome{
+            color: white;
+            text-align: center;
+            /* margin-left: 100px; */
+            margin-top: 150px;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+        .h1{
+            color: white;
+            position: absolute;
+            margin-top: 10px;
+            animation-name: fade1;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            margin-left: 480px;
+            font-size: 60px;
+        }
+        @keyframes fade1{
+          0%{
+            opacity: 0;
+          }
+          16%{
+            opacity: 1;
+          }
+          33%{
+            opacity: 0;
+          }
+          34%{
+            opacity: 0;
+          }
+          35%{
+            opacity: 0;
+          }
+          100%{
+            opacity: 0;
+          }
+        }
+        .h2{
+            color: white;
+            position: absolute;
+            margin-top: 10px;
+            animation-name: fade2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            margin-left: 530px;
+            font-size: 60px;
+            /* text-align: center; */
+        }
+        @keyframes fade2{
+          0%{
+            opacity: 0;
+          }
+          33%{
+            opacity: 0;
+          }
+          34%{
+            opacity: 0;
+          }
+          53%{
+            opacity: 1;
+          }
+          67%{
+            opacity: 1;
+          }
+          68%{
+            opacity: 0;
+          }
+          100%{
+            opacity: 0;
+          }
+        }
+        .h3{
+            color: white;
+            position: absolute;
+            margin-top: 10px;
+            animation-name: fade3;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            margin-left: 470px;
+            font-size: 60px;
+            /* text-align: center; */
+        }
+        @keyframes fade3{
+          0%{
+            opacity: 0;
+          }
+          67%{
+            opacity: 0;
+          }
+          68%{
+            opacity: 0;
+          }
+          84%{
+            opacity: 1;
+          }
+          100%{
+            opacity: 1;
+          }
+        }
+        .para1{
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            margin-top: 100px;
+            
+        }
+        .btn1{
+            height: 60px;
+            width: 200px;
+            border: 2px solid white;
+            background-color: transparent;
+            color: white;
+            border-radius: 40px;
+            margin-left: 660px;
+            font-size: 17px;
+            margin-top: 70px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn1:hover{
+            background-color: white;
+            color: black;
+        }
+        .sbtn{
+            height: 54px;
+            width: 33px;
+            border: 2px solid white;
+            border-radius: 20px;
+            margin-left: 740px;
+            margin-top: 50px;
+            cursor: pointer;
+            position: relative;
+            animation-name: bounce;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            /* animation-play-state: paused; */
+            /* animation-fill-mode: forwards; */
+            /* animation-direction: alternate; */
+        }
+        @keyframes bounce{
+            0%{
+                margin-top: 50px;
+            }
+            50%{
+                margin-top: 15px;
+            }
+            55%{
+                margin-top: 50px;
+            }
+            65%{
+                margin-top: 30px;
+            }
+            70%{
+                margin-top: 50px;
+            }
+            75%{
+                margin-top: 45px;
+            }
+            80%{
+                margin-top: 50px;
+            }
+        }
+        .csbtn{
+           height: 14px;
+           width: 5px;
+           background-color: white;
+           position: absolute;
+           margin-left: 12px;
+           border: 1px solid white;
+           border-radius: 15px;
+           margin-top: 30px;
+
+        }
+        .Section2{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid; */
+            padding: 1px;
+        }
+        .parent2{
+            height: 450px;
+            width: 1300px;
+            /* border: 1px solid red; */
+            margin-left: 100px;
+            margin-top: 200px;
+            position: relative;
+        }
+        .navbar2{
+            height: 90px;
+            width: 1518px;
+            /* border: 1px solid red; */
+            position: fixed;
+            padding: 15px;
+            margin: 0;
+            background-color: white;
+            color: black;
+            position: absolute;
+            /* position: fixed; */
+            animation-name: fadechng2;
+            animation-duration: inherit;
+            animation-iteration-count: inherit;
+            animation-direction: alternate;
+            box-shadow: 0px 19px 43px -22px rgba(0,0,0,0.75);
+            }
+    
+        .logo2{
+            height: 32px;
+            width: 80px;
+            /* border: 1px solid rebeccapurple; */
+            background-color: transparent;
+            background-image: url(./images/images02.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            /* z-index: 2; */
+            margin-left: 200px;
+            margin-top: 10px
+        }
+        .Navul2{
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 480px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .navlist2{
+            display: inline;
+            /* vertical-align: middle; */
+            margin: 16px;
+            list-style: none;
+        }
+        .navlist2 a{
+            color: black;
+            text-decoration: none;
+        }
+        .navlist2 a:hover{
+            color: palevioletred;
+        }
+        /* .navlist1 a{
+            color: palevioletred;
+            text-decoration: none;
+        } */
+        .imagediv2{
+            height: 450px;
+            width: 600px;
+            /* border: 1px solid red; */
+            background-image: url(./images/images03.jpg);
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .textdiv2{
+            height: 450px;
+            width: max-content;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 30px;
+        }
+        .h5{
+            font-weight: normal;
+        }
+        .para2{
+            font-size: 18px;
+            color: rgb(122,132,150);
+            margin-top: 20px;
+        }
+        .socialicon{
+            height: 60px;
+            width: 400px;
+            /* border: 1px solid red; */
+            margin-top: 40px;
+        }
+        .iconborder{
+            border: 1px solid rgb(122,132,150);
+            border-radius: 20px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .db{
+            font-size: 22px;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 8px;
+        }
+        .iconborder{
+            border: 1px solid rgb(122,132,150);
+            border-radius: 20px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+        .fb{
+            font-size: 21px;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 12px;
+        }
+        .iconborder{
+            border: 1px solid rgb(122,132,150);
+            border-radius: 20px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+        .in{
+            font-size: 21px;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 12px;
+        }
+        .iconborder{
+            border: 1px solid rgb(122,132,150);
+            border-radius: 20px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+        .tw{
+            font-size: 21px;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+        .Section3{
+            height: 150vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: rgb(248,249,250);
+            padding: 20px;
+        }
+        .services{
+            height: max-content;
+            width: max-content;
+            text-align: center;
+            /* border: 1px solid red; */
+            margin-top: 100px;
+            margin-left: 500px;
+        }
+        .h6{
+            font-weight: normal;
+        }
+        .para3{
+            margin-top: 10px;
+            color: rgb(122,132,150);
+            font-size: 17px;
+            line-height: 25px;
+        }
+        .parent3{
+            height: 650px;
+            width: 1300px;
+            /* border: 1px solid red; */
+            margin-left: 100px;
+            margin-top: 80px;
+        }
+        .sblock1{
+            height: 280px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            text-align: center;
+            /* position: relative; */
+        }
+
+        .sblock2{
+            height: 280px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            text-align: center;
+        }
+        .sblock3{
+            height: 280px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            text-align: center;
+        }
+        .sblock4{
+            height: 280px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            text-align: center;
+        }
+        .sblock5{
+            height: 280px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            text-align: center;
+        }
+        .sblock6{
+            height: 280px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            text-align: center;
+        }
+        /* .sblock1:hover{
+            border-bottom: 2px solid;
+        } */
+        /* .icdiv{
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+        } */
+        .chart{
+            color: rgb(241, 89, 105);
+            font-size: 50px;
+            /* margin-left: 140px; */
+            margin-top: 30px;
+            /* font-weight: normal; */
+        }
+        .gd{
+            font-weight: normal;
+            margin-top: 10px;
+        }
+        .bb{
+            border-bottom: 2px solid rgb(241, 89, 105);
+            margin-top: 20px;
+            width: 70px;
+            margin-left: 140px;
+        }
+        .p3{
+            color: rgb(122,132,150);
+            margin-top: 20px;
+            font-size: 17px;
+        }
+        .uc{
+            color: rgb(241, 89, 105);
+            font-size: 50px;
+            /* margin-left: 140px; */
+            margin-top: 30px;
+        }
+        .mm{
+            color: rgb(241, 89, 105);
+            font-size: 50px;
+            /* margin-left: 140px; */
+            margin-top: 30px;
+        }
+        .uw{
+            color: rgb(241, 89, 105);
+            font-size: 50px;
+            /* margin-left: 140px; */
+            margin-top: 30px;
+        }
+        .rd{
+            color: rgb(241, 89, 105);
+            font-size: 50px;
+            /* margin-left: 140px; */
+            margin-top: 30px;
+        }
+        .ec{
+            color: rgb(241, 89, 105);
+            font-size: 50px;
+            /* margin-left: 140px; */
+            margin-top: 30px;
+        }
+        .Section4{
+            height: 30vh;
+            width: 100%;
+            /* border: 1px solid; */
+            text-align: center;
+        }
+        .h7{
+            margin-top: 130px;
+            font-weight: bold;
+            font-size: 35px;
+            font-family: sans-serif;
+        }
+        .btn2{
+            height: 60px;
+            width: 140px;
+            /* border: 1px solid red; */
+            border: none;
+            background-color: rgb(230,95,120);
+            color: white;
+            font-size: 17px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .Section5{
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: rgb(248,249,250);
+            position: relative;
+            padding: 1px;
+        }
+        .client1{
+            height: 600px;
+            width: 900px;
+            /* border: 1px solid red; */
+            margin-top: 100px;
+            margin-left: 300px;
+            text-align: center;
+            font-size: 20px;
+            overflow: hidden;
+        }
+        .cldiv{
+            height: 450px;
+            width: 2700px;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+            animation-name: slider;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slider{
+            0%{
+                margin-left: 0;
+            }
+            32%{
+                margin-left: 0;
+            }
+            33%{
+                margin-left: -900px;
+            }
+            65%
+            {
+                margin-left: -900px;
+            }
+            66%{
+                margin-left: -1800px;
+            }
+            100%{
+                margin-left: -1800px;
+            }
+
+        }
+        .bordiv{
+            height: max-content;
+            width: 900px;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+            display: inline-block;
+            /* overflow: hidden; */
+        }
+        .d1{
+            margin-left: -20px;
+        }
+        .h6{
+            font-weight: bold;
+        }
+        .para5{
+            margin-top: 10px;
+            color: rgb(122,132,150);
+            font-size: 17px;
+            line-height: 25px;
+        }
+        .drop{
+            color: rgb(241, 89, 105);
+            font-size: 30px;
+            margin-top: 50px;
+            display: inline-block;
+            vertical-align: top;
+            /* margin: 1px; */
+        }
+        .divimg4{
+            height: 120px;
+            width: 120px;
+            /* border: 1px solid red; */
+            border-radius: 80px;
+            background-image: url(./images/images06.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-left: 390px;
+            margin-top: 30px;
+            z-index: 3;
+        } 
+        .dimg5{
+            height: 120px;
+            width: 120px;
+            /* border: 1px solid red; */
+            border-radius: 80px;
+            background-image: url(./images/images04.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-left: 390px;
+            margin-top: 30px;
+            z-index: 2;
+        } 
+        .dimg6{
+            height: 120px;
+            width: 120px;
+            /* border: 1px solid red; */
+            border-radius: 80px;
+            background-image: url(./images/images05.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-left: 390px;
+            margin-top: 30px;
+            z-index: 1;
+        } 
+        .p4{
+            margin-top: 20px;
+            color: rgb(122,132,150);
+            /* font-size: 17px; */
+            line-height: 25px;
+            font-style: italic;
+        }
+        .name{
+            margin-top: 50px;
+            color: rgb(76, 83, 96);
+            font-size: 17px;
+        }
+        .resdiv{
+            height: 6px;
+            width: 14px;
+            background-color: rgb(239,172,185);
+            border: 1px solid;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* .r1{
+            width: 16px;
+            background-color: rgb(230,95,120);
+            margin-top: 40px;
+        } */
+       
+        .Section6{
+            height: 130vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            /* background-color: rgb(248,249,250); */
+        }
+        .works{
+            height: 900px;
+            width: 1300px;
+            text-align: center;
+            /* border: 1px solid red; */
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 20px;
+        }
+        .allworks{
+            list-style: none;
+            margin-top: 80px;
+            cursor: pointer;
+        }
+        .wk{
+            display: inline;
+            vertical-align: top;
+            padding: 3px 15px 3px 15px;
+            font-size: 18px;
+            
+        }
+        .wk:hover{
+            color: white;
+            /* background-color: rgb(241, 89, 105); */
+            border-radius: 15px;
+            /* height: ; */
+        }
+        .divimg6{
+            height: max-content;
+            width: 1300px;
+            /* border: 1px solid red; */
+            margin-top: 70px;
+            cursor: pointer;
+        }
+        .wblock1{
+            height: 250px;
+            width: 370px;
+            /* border: 1px solid rgb(199, 200, 200); */
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/images07.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: 20px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .wblock1:hover .overlay{
+            top: 0;
+            transition: scale(1.1);
+        }
+        .wblock2:hover .overlay{
+            top: 0;
+            transition: scale(1.1);
+        }
+        .wblock3:hover .overlay{
+            top: 0;
+            transition: scale(1.1);
+        }
+        .wblock4:hover .overlay{
+            top: 0;
+            transition: scale(1.1);
+        }
+        .wblock5:hover .overlay{
+            top: 0;
+            transition: scale(1.1);
+        }  
+        .wblock6:hover .overlay{
+            top: 0;
+            transition: scale(1.1);
+        }
+        .overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.721);
+            top: 100%;
+            transition: .1s;
+            text-align: center;
+        }
+        .ctgry{
+            color: rgb(153, 153, 155);
+            margin-top: 100px;
+            font-size: 16px;
+            /* font-weight: lighter; */
+        }
+        .pjtitle{
+            font-weight: lighter;
+            color: white;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        .wblock2{
+            height: 250px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            background-image: url(./images/images08.jpg);
+            background-position: center;
+            background-size: cover;
+            margin: 20px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .wblock3{
+            height: 250px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            background-image: url(./images/images09.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .wblock4{
+            height: 250px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            background-image: url(./images/images10.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .wblock5{
+            height: 250px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            background-image: url(./images/images11.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .wblock6{
+            height: 250px;
+            width: 370px;
+            border: 1px solid rgb(199, 200, 200);
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            background-image: url(./images/images12.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .Section7{
+            height: 120vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: rgb(248,249,250);
+            padding: 1px;
+        }
+        .blogs{
+            height: 800px;
+            width: 1300px;
+            text-align: center;
+            /* border: 1px solid red; */
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 19px;
+        }
+        .blog1{
+            height: 500px;
+            width: 380px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            margin-top: 80px;
+            text-align: left;
+            background-color: white;
+        }
+        .bd1{
+            height: 230px;
+            width: 350px;
+            margin-top: 10px;
+            margin-left: 15px;
+            /* border: 1px solid red; */
+            border-radius: 10px;
+            background-image: url(./images/images13.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .blogh1{
+            font-weight: normal;
+            margin-left: 10px;
+            font-size: 25px;
+        }
+        .bdate1{
+            color: rgb(122,132,150);
+            font-weight: normal;  
+            margin-left: 10px;
+            margin-top: 10px; 
+        }
+        .bp1{
+            color: rgb(122,132,150);
+            font-weight: normal;  
+            margin-left: 10px;
+            margin-top: 10px; 
+            font-size: 18px;
+        }
+        .rm{
+            color: rgb(95, 100, 107);
+            margin-left: 10px;
+            margin-top: 30px; 
+            font-size: 17px;
+        }
+        .blog2{
+            height: 500px;
+            width: 380px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            margin-top: 80px;
+            text-align: left;
+            background-color: white;
+        }
+        .bd2{
+            height: 230px;
+            width: 350px;
+            margin-top: 10px;
+            margin-left: 15px;
+            /* border: 1px solid red; */
+            border-radius: 10px;
+            background-image: url(./images/images14.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .blog3{
+            height: 500px;
+            width: 380px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+            margin-top: 80px;
+            text-align: left;
+            background-color: white;
+        }
+        .bd3{
+            height: 230px;
+            width: 350px;
+            margin-top: 10px;
+            margin-left: 15px;
+            /* border: 1px solid red; */
+            border-radius: 10px;
+            background-image: url(./images/images15.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .Section8{
+            height: 120vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            padding: 20px;
+        }
+        .Contact{
+            height: max-content;
+            width: max-content;
+            text-align: center;
+            /* border: 1px solid red; */
+            margin-top: 100px;
+            margin-left: 100px;
+            font-size: 19px;
+        }
+        .parent8{
+            height: 200px;
+            width: 1100px;
+            margin-left: 100px;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+        }
+        .infodiv1{
+            height: 200px;
+            width: 200px;
+            /* border: 1px solid red; */
+            /* margin: 50px; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -100px;
+        }
+        .infodiv2{
+            height: 200px;
+            width: 200px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 160px;
+        }
+        .infodiv3{
+            height: 200px;
+            width: max-content;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 160px;
+        }
+        .mb{
+           color: rgb(241, 89, 105) ; 
+           font-size: 40px;
+           margin-top: 25px;
+        }
+        .h8{
+            font-weight: normal;
+            margin-top: 20px;
+        }
+        .h9{
+            font-weight: normal;
+            color: rgb(122,132,150);
+        }
+        .namediv{
+            height: 60px;
+            width: 1200px;
+            /* border: 1px solid red; */
+            margin-left: 40px;
+        }
+        .ndiv{
+            height: 60px;
+            width: 580px;
+            border: 1px solid rgb(161, 171, 188);
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            color: rgb(110, 116, 126);
+            padding: 13px;
+            border-radius: 5px;
+        }
+        .ediv{
+            height: 60px;
+            width: 580px;
+            border: 1px solid rgb(161, 171, 188);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            text-align: left;
+            color: rgb(110, 116, 126);
+            padding: 13px;
+            border-radius: 5px;
+        }
+        .subdiv{
+            height: 60px;
+            width: 1188px;
+            border: 1px solid rgb(161, 171, 188);
+            margin-left: 46px;
+            text-align: left;
+            color: rgb(110, 116, 126);
+            padding: 13px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .msgdiv{
+            height: 100px;
+            width: 1188px;
+            border: 1px solid rgb(161, 171, 188);
+            margin-left: 46px;
+            text-align: left;
+            color: rgb(110, 116, 126);
+            padding: 13px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn3{
+            height: 55px;
+            width: 180px;
+            border: 1px solid rgb(230,95,120);
+            background-color: rgb(230,95,120);
+            color: white;
+            margin-left: 1050px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .btn3:hover{
+            background-color: rgb(202, 93, 113);
+        }
+        .Section9{
+            height: 30vh;
+            width: 100%;
+            /* border: 1px solid red; */
+            background-color: rgb(33,33,33);
+            padding: 20px;
+        }
+        .socialicon2{
+            height: 60px;
+            width: max-content;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+            margin-left: 600px;
+        }
+        .iconborder2{
+            /* border: 1px solid rgb(122,132,150); */
+            border-radius: 20px;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            background-color: rgb(49,49,49);
+            border: none;
+            margin: 5px;
+        }
+        .fb2{
+            font-size: 21px;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 15px;
+            color: rgb(171,171,171);
+
+        }
+        .iconborder2{
+            /* border: 1px solid rgb(122,132,150); */
+            border-radius: 20px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+            border: none;
+        }
+        .in2{
+            font-size: 21px;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 15px;
+            color: rgb(171,171,171);
+        }
+        .iconborder2{
+            /* border: 1px solid rgb(122,132,150); */
+            border-radius: 20px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+            border: none;
+        }
+        .pn{
+            font-size: 22px;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 15px;
+            color: rgb(171,171,171);
+        }
+        .iconborder2{
+            /* border: 1px solid rgb(122,132,150); */
+            border-radius: 30px;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+            border: none;
+        }
+        .tw2{
+            font-size: 21px;
+            font-weight: normal;
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 15px;
+            color: rgb(171,171,171);
+        }
+        .p9{
+            color: rgb(171,171,171);
+            font-weight: normal;
+            margin-left: 580px;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <div class="Section1">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="blackdiv">
+            <div class="navbar">
+                <div class="logo"></div>
+                <ul class="Navul">
+                    <li class="navlist1"> <a href="">Home</a></li>
+                    <li class="navlist"> <a href="">About</a></li>
+                    <li class="navlist"> <a href="">Services</a></li>
+                    <li class="navlist"> <a href="">Client</a></li>
+                    <li class="navlist"> <a href="">Portfolio</a></li>
+                    <li class="navlist"> <a href="">Blog</a></li>
+                    <li class="navlist"> <a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="texdiv">
+                <h3 class="welcome">Welcome</h3>
+                <h1 class="h1">I'M A Photographer.</h1>
+                <h1 class="h2">I'M A Kerri Deo.</h1>
+                <h1 class="h3">I'M A Graphic Designer.</h1>
+                <p class="para1">It is a long established fact that a reader will be of a page when
+                    <br> established fact looking at its layout.
+                </p>
+                <button class="btn1">DOWNLOAD CV</button>
+                <div class="sbtn">
+                    <div class="csbtn"></div>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div class="Section2">
+        <div class="navbar2">
+            <div class="logo2"></div>
+            <ul class="Navul2">
+                <li class="navlist2"> <a href="">Home</a></li>
+                <li class="navlist2"> <a href="">About</a></li>
+                <li class="navlist2"> <a href="">Services</a></li>
+                <li class="navlist2"> <a href="">Client</a></li>
+                <li class="navlist2"> <a href="">Portfolio</a></li>
+                <li class="navlist2"> <a href="">Blog</a></li>
+                <li class="navlist2"> <a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="parent2">
+            <div class="imagediv2"></div>
+            <div class="textdiv2">
+                <h1 class="h4">About <span style="font-weight: lighter;">Me</span></h1>
+                <h1 class="h5">Hello! <span style="color: rgb(241, 89, 105);">I'M Kerri Deo.</span></h1>
+                <p class="para2">It is a long established fact that a reader will be distracted by the readable
+                    <br> content of a page when looking at its layout. <br>
+                    <br>
+                    The point of using Lorem Ipsum is that it has a more-or-less normal
+                    <br> distribution of letters, as opposed to using 'Content here, content here',
+                    <br> making it look like readable English. <br>
+                    <br>
+                    There are many variations of passages of Lorem Ipsum available, but the
+                    <br> majority have suffered alteration in some form, by injected humour, or
+                    <br> randomised words which don't look even slightly believable.</p>
+                <div class="socialicon">
+                    <div class="iconborder">
+                        <i class="fa-brands fa-dribbble db"></i>
+                    </div>
+                    <div class="iconborder">
+                        <i class="fa-brands fa-facebook-f fb"></i>
+                    </div>
+                    <div class="iconborder">
+                        <i class="fa-brands fa-linkedin-in in"></i>
+                    </div>
+                    <div class="iconborder">
+                        <i class="fa-brands fa-twitter tw"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Section3">
+        <div class="services">
+            <h1 class="h6"><span style="font-weight: lighter;">Our</span> Services</h1>
+            <p class="para3">It is a long established fact that a reader will be of a page when
+                <br> established fact looking at its layout.</p>
+        </div>
+        <div class="parent3">
+            <div class="sblock1">
+                <i class="fa-solid fa-chart-line chart"></i> 
+                <h2 class="gd">Graphic Design</h2>   
+                <div class="bb"></div>
+                <p class="p3">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>            
+            </div>
+            <div class="sblock2">
+                <i class="fa-solid fa-mug-saucer uc"></i>
+                <h2 class="gd">Unlimited Color</h2>   
+                <div class="bb"></div>
+                <p class="p3">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+            </div>
+            <div class="sblock3">
+                <i class="fa-solid fa-cloud-arrow-up mm"></i>
+                <h2 class="gd">Media Marketing</h2>   
+                <div class="bb"></div>
+                <p class="p3">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+            </div>
+            <div class="sblock4">
+                <i class="fa-solid fa-layer-group uw"></i>
+                <h2 class="gd">Unlimited Wifi</h2>   
+                <div class="bb"></div>
+                <p class="p3">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+            </div>
+            <div class="sblock5">
+                <i class="fa-solid fa-folder rd"></i>
+                <h2 class="gd">Responsive Design</h2>   
+                <div class="bb"></div>
+                <p class="p3">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+            </div>
+            <div class="sblock6">
+                <i class="fa-solid fa-file-pen ec"></i>
+                <h2 class="gd">Easy to customize</h2>   
+                <div class="bb"></div>
+                <p class="p3">There are many variations of passages of <br> but the majority have suffered alteration in <br> some form.</p>
+            </div>
+        </div>
+    </div>
+    <div class="Section4">
+        <h1 class="h7">I Am Available For Freelancer.</h1>
+        <button class="btn2">HIRE ME!</button>
+    </div>
+    <div class="Section5">
+        <div class="client1">
+            <h1 class="h6"><span style="font-weight: lighter;">Our</span> Client</h1>
+            <p class="para5">It is a long established fact that a reader will be of a page when
+                <br> established fact looking at its layout.
+            </p>
+            <div class="cldiv">
+                <div class="bordiv d1">
+                    <i class="fa-solid fa-droplet drop"></i>
+                    <i class="fa-solid fa-droplet drop"></i>
+                    <div class="divimg4"></div>
+                    <p class="p4">"The point of using Lorem ipsum is that it has a more-or-less normal distributions of letters, <br>
+                    as opposed to using 'Content here."</p>
+                    <h5 class="name"><span style="font-weight: lighter;">-Ebony verty,</span> Envato</h5> 
+                    <!-- <div class="resdiv r1"></div> -->
+                </div>
+                <div class="bordiv d2">
+                    <i class="fa-solid fa-droplet drop"></i>
+                    <i class="fa-solid fa-droplet drop"></i>
+                    <div class="dimg5"></div>
+                    <p class="p4">"The point of using Lorem ipsum is that it has a more-or-less normal distributions of letters, <br>
+                    as opposed to using 'Content here."</p>
+                    <h5 class="name"><span style="font-weight: lighter;">-Ebony verty,</span> Envato</h5> 
+                    <!-- <div class="resdiv r2"></div> -->
+                </div>
+                <div class="bordiv d3">
+                    <i class="fa-solid fa-droplet drop"></i>
+                    <i class="fa-solid fa-droplet drop"></i>
+                    <div class="dimg6"></div>
+                    <p class="p4">"The point of using Lorem ipsum is that it has a more-or-less normal distributions of letters, <br>
+                    as opposed to using 'Content here."</p>
+                    <h5 class="name"><span style="font-weight: lighter;">-Ebony verty,</span> Envato</h5> 
+                    <!-- <div class="resdiv r3"></div> -->
+                </div>
+            </div>
+            <div class="resdiv"></div>
+            <div class="resdiv"></div>
+            <div class="resdiv"></div>
+        </div>
+       
+      
+    </div>
+    <div class="Section6">
+        <div class="works">
+            <h1 class="h6"><span style="font-weight: lighter;">Our</span> Works</h1>
+            <p class="para5">It is a long established fact that a reader will be of a page when
+                <br> established fact looking at its layout.
+            </p>
+            <ul class="allworks">
+                <li class="wk">ALL</li>
+                <li class="wk">CEO</li>
+                <li class="wk">WEBDESIGN</li>
+                <li class="wk">WORK</li>
+                <li class="wk">WORDPRESS</li>
+            </ul>
+            <div class="divimg6">
+                <div class="wblock1">
+                    <div class="overlay">
+                        <h5 class="ctgry">Category</h5>
+                        <h2 class="pjtitle">Project title</h2>
+                    </div>
+                </div>
+                <div class="wblock2">
+                    <div class="overlay">
+                        <h5 class="ctgry">Category</h5>
+                        <h2 class="pjtitle">Project title</h2>
+                    </div>
+                </div>
+                <div class="wblock3">
+                    <div class="overlay">
+                        <h5 class="ctgry">Category</h5>
+                        <h2 class="pjtitle">Project title</h2>
+                    </div>
+                </div>
+                <div class="wblock4">
+                    <div class="overlay">
+                        <h5 class="ctgry">Category</h5>
+                        <h2 class="pjtitle">Project title</h2>
+                    </div>
+                </div>
+                <div class="wblock5">
+                    <div class="overlay">
+                        <h5 class="ctgry">Category</h5>
+                        <h2 class="pjtitle">Project title</h2>
+                    </div>
+                </div>
+                <div class="wblock6">
+                    <div class="overlay">
+                        <h5 class="ctgry">Category</h5>
+                        <h2 class="pjtitle">Project title</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div class="Section7">
+    <div class="blogs">
+        <h1 class="h6"><span style="font-weight: lighter;">Our</span> Blog</h1>
+        <p class="para5">It is a long established fact that a reader will be of a page when
+            <br> established fact looking at its layout.
+        </p>
+        <div class="blog1">
+            <div class="bd1"></div>
+            <h2 class="blogh1">There are many variations</h2>
+            <h4 class="bdate1">11 March 2018 <span style="color: rgb(241, 89, 105);">By Kerri</span></h4>
+            <p class="bp1">Sit sagittis vulputate laoreet sodales tortor <br> nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <h5 class="rm">Read More...</h5>
+        </div>
+        <div class="blog2">
+            <div class="bd2"></div>
+            <h2 class="blogh1">Contrary to popular belief</h2>
+            <h4 class="bdate1">18 March 2018 <span style="color: rgb(241, 89, 105);">By Kerri</span></h4>
+            <p class="bp1">Sit sagittis vulputate laoreet sodales tortor <br> nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <h5 class="rm">Read More...</h5>
+        </div>
+        <div class="blog3">
+            <div class="bd3"></div>
+            <h2 class="blogh1">Lorem Ipsum is not simply</h2>
+            <h4 class="bdate1">22 March 2018 <span style="color: rgb(241, 89, 105);">By Kerri</span></h4>
+            <p class="bp1">Sit sagittis vulputate laoreet sodales tortor <br> nulla lobortis bibendum netus primis <br> fames. Lobortis ultricies.</p>
+            <h5 class="rm">Read More...</h5>
+        </div>
+    </div>
+</div>
+<div class="Section8">
+    <div class="Contact">
+        <h1 class="h6"> Contact <span style="font-weight: lighter;">Us</span></h1>
+        <p class="para5">It is a long established fact that a reader will be of a page when
+            <br> established fact looking at its layout.
+        </p>
+        <div class="parent8">
+            <div class="infodiv1">
+                <i class="fa-solid fa-mobile-screen-button mb"></i>
+                <h4 class="h8">Call Us On</h4>
+                <h4 class="h9">+985 123 7856</h4>
+            </div>
+            <div class="infodiv2">
+                <i class="fa-sharp fa-regular fa-envelope mb"></i>
+                <h4 class="h8">Email Us At</h4>
+                <h4 class="h9">Website.Kerri@gmail.com</h4>
+            </div>
+            <div class="infodiv3">
+                <i class="fa-solid fa-location-dot mb"></i>
+                <h4 class="h8">Visit Office</h4>
+                <h4 class="h9">202, Grasselli Street , Conway.</h4>
+            </div>
+        </div>
+        <div class="namediv">
+            <div class="ndiv">Your Name...</div>
+            <div class="ediv">Your Email...</div>
+        </div>
+        <div class="subdiv">Your Subject...</div>
+        <div class="msgdiv">Your Message...</div>
+        <button class="btn3">SEND MESSAGE</button>
+    </div>
+</div>
+<div class="Section9">
+    <div class="socialicon2">
+        <div class="iconborder2">
+            <i class="fa-brands fa-facebook-f fb2"></i>
+        </div>
+        <div class="iconborder2">
+            <i class="fa-brands fa-linkedin-in in2"></i>
+        </div>
+        <div class="iconborder2">
+            <i class="fa-brands fa-pinterest-p pn"></i>
+        </div>
+        <div class="iconborder2">
+            <i class="fa-brands fa-twitter tw2"></i>
+        </div>
+    </div>
+    <h4 class="p9">2018 - 2021 © Kerri. Design by SRBThemes.</h4>
+</div>
+</body>
+</html

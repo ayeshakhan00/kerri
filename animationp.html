@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        .box{
+            height: 70vh;
+            width: 80%;
+            border: 1px solid ;
+            position: relative;
+        }
+        .child{
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            position: absolute;
+            animation-name: fade;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            box-shadow: 27px 29px 33px 30px rgba(0,0,0,0.64);        
+        }
+
+
+        @keyframes fade{
+            from{
+                left: 0px;
+                background-image: url(https://media.wi.com/photos/63b8d0a771c6b526845f15a6/master/pass/CES-2023-PEUGEOT_INCEPTION_CONCEPT_2301CN202.jpg);
+                background-position: center;
+                background-size: cover;
+                opacity: 2;
+            }
+            to{
+                left: 500px;
+                background-image: url(https://i.ytimg.com/vi/tArC9-RHmU4/maxresdefault.jpg);
+                background-position: center;
+                background-size: cover;
+                opacity: 2;
+               width: 600px;
+            }
+        }
+        .block1{
+            color: rgba(0, 0, 255, 0.349);
+            position: absolute;
+            width: max-content;
+            height: max-content;
+            animation-name: fadeup;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes fadeup{
+            from{
+                top: 400px;
+                opacity: 0;
+                color: rgba(0, 0, 255, 0.467);
+            }
+            to{
+                top: 0px;
+                opacity: 1;
+                color: rgb(165, 42, 42);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="child">
+            <div class="block1">
+                <h1 class="range r1">range009</h1>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html

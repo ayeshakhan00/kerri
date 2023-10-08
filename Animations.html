@@ -1,0 +1,65 @@
+/<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poitions and animations</title>
+
+    <style>
+        .Box{
+            height: 500px;
+            width: 800px;
+            border: 1px solid;
+            position: relative;
+        }
+        .child{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            position: absolute;
+            background-color: green;
+            animation-name: fade;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+        }
+
+        @keyframes fade{
+          0%{
+            margin-left: 0;
+            margin-top: 0;
+          }
+          25%{
+            margin-left: 600px;
+            margin-top: 0;
+            border-radius: 50%;
+          }
+          50%{
+            margin-top: 300px;
+            margin-left: 600px;
+            border-radius: 0;
+          }
+          75%{
+            margin-top: 300px;
+            margin-left: 0; 
+          }
+          100%{
+                margin-left: 0;
+                margin-top: 0;
+          }
+        }
+        
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="Box">
+        <div class="child c1"></div>
+    </div>
+
+
+</body>
+</html>
